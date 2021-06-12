@@ -1,7 +1,21 @@
 import "./styles.css";
 import Header from "./Header";
+import { render } from "react-dom";
 
 export default function App() {
+  let subscribers = [
+    {
+      Id: 1,
+      Name: "siva",
+      Phone: 6360863897
+    },
+    {
+      Id: 1,
+      Name: "sankari",
+      Phone: 8754340858
+    }
+  ];
+
   return (
     <div className="App">
       <Header />
@@ -13,6 +27,14 @@ export default function App() {
           <span className="grid-item name-heading">Name</span>
           <span className="grid-item phone-heading">Phone</span>
         </div>
+        {subscribers.map((sub) => {
+          return (
+            <div key={sub.Id} className="grid-container">
+              <span className="grid-item">{sub.Name}</span>
+              <span className="grid-item">{sub.Phone}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
