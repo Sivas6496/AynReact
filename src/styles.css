@@ -53,3 +53,11 @@
   color: #808080;
   text-transform: uppercase;
 }
+.deleteButton {
+  width: 6rem;
+  padding: 0.45rem;
+  background-color: lightpink;
+  border-color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}

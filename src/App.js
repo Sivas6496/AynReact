@@ -32,6 +32,7 @@ export default function App() {
             <div key={sub.Id} className="grid-container">
               <span className="grid-item">{sub.Name}</span>
               <span className="grid-item">{sub.Phone}</span>
+              <button className="deleteButton">Delete</button>
             </div>
           );
         })}
