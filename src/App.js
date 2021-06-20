@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header heading="PHONE DIRECTORY" />
       <br />
       <div className="component-body-container">
         <button className="custom-btn add-btn">Add</button>
