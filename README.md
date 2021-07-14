@@ -1,4 +1,4 @@
-# AynReact
+# Phone Directory
 
 Created with CodeSandbox
 
